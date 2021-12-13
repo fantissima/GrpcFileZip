@@ -18,7 +18,7 @@ namespace gRPC.Client
             Thread.Sleep(5000);
             GrpcChannel channel = GrpcChannel.ForAddress("https://localhost:5001");
             FileTransfer.FileTransferClient fileTransferClient = new FileTransfer.FileTransferClient(channel);
-             
+        
             string filePath = @"C:\Users\kfranke\Documents\";
             string fileName = @"OMNIA_2021_10_01_16_15_22_neu.txt";
             string file = filePath + fileName;
